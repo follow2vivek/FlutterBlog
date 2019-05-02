@@ -3,7 +3,6 @@ import 'package:flutter_uplab_login_ui/util/color.dart';
 import 'package:flutter_uplab_login_ui/widget/header_logo.dart';
 import 'package:flutter_uplab_login_ui/widget/login.dart';
 import 'package:flutter_uplab_login_ui/widget/social.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class LoginScreen extends StatelessWidget {
   @override
@@ -14,20 +13,17 @@ class LoginScreen extends StatelessWidget {
         padding: EdgeInsets.only(left: 16),
         child: Column(
           children: <Widget>[
-            Expanded(
-              flex: 3,
-              child: Padding(
-                padding: EdgeInsets.only(right: 16),
-                child: Stack(
-                  fit: StackFit.loose,
-                  children: <Widget>[
-                    Container(
-                      height: 250,
-                      child: HeaderLogo(),
-                    ),
-                    Login()
-                  ],
-                ),
+            Padding(
+              padding: EdgeInsets.only(right: 16),
+              child: Stack(
+                fit: StackFit.loose,
+                children: <Widget>[
+                  Container(
+                    height: 250,
+                    child: HeaderLogo(),
+                  ),
+                  Login()
+                ],
               ),
             ),
             Padding(
@@ -58,7 +54,7 @@ class LoginScreen extends StatelessWidget {
                   ),
                   child: Center(
                     child: Text(
-                      'SIGNUP',
+                      'LOGIN',
                       style: TextStyle(
                         color: Colors.white,
                         fontFamily: 'Bold',
@@ -70,7 +66,39 @@ class LoginScreen extends StatelessWidget {
               ),
             ),
             SizedBox(
-              height: 30,
+              height: 20,
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+                Container(
+                  color: Color(0xffe9eaec),
+                  height: 2,
+                  width: 100,
+                ),
+                SizedBox(
+                  width: 10,
+                ),
+                Text(
+                  'Social Login',
+                  style: TextStyle(
+                    fontFamily: 'Medium',
+                    fontSize: 15,
+                    color: Color(0xffe9eaec),
+                  ),
+                ),
+                SizedBox(
+                  width: 10,
+                ),
+                Container(
+                  width: 100,
+                  color: Color(0xffe9eaec),
+                  height: 2,
+                )
+              ],
+            ),
+            SizedBox(
+              height: 20,
             ),
             Expanded(
               flex: 1,
@@ -85,7 +113,31 @@ class LoginScreen extends StatelessWidget {
                   Align(
                     alignment: Alignment.topCenter,
                     child: Social(),
-                  )
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(bottom: 20),
+                    child: Align(
+                      alignment: Alignment.bottomCenter,
+                      child: RichText(
+                        text: TextSpan(
+                          text: 'New User?',
+                          style: TextStyle(
+                              fontFamily: 'Medium',
+                              fontSize: 14,
+                              color: Color(0xff3f4b5a)),
+                          children: [
+                            TextSpan(
+                              text: ' Sign Up',
+                              style: TextStyle(
+                                  fontFamily: 'Medium',
+                                  fontSize: 14,
+                                  color: Color(0xff5e75e4)),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                  ),
                 ],
               ),
             )
