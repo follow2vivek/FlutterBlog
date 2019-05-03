@@ -159,10 +159,10 @@ class HomeScreen extends StatelessWidget {
                 ),
                 Positioned(
                   child: Container(
-                    width: 120,
-                    height: 50,
+                    width: 110,
+                    height: 40,
                     decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(8),
+                      borderRadius: BorderRadius.circular(5),
                       color: Colors.white,
                     ),
                     child: Center(
@@ -334,9 +334,10 @@ class HomeScreen extends StatelessWidget {
                     ],
                   ),
                   SizedBox(
-                    height: 10,
+                    height: 5,
                   ),
                   Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: <Widget>[
                       Text(
                         'iPhone XS 256 GB',
@@ -344,6 +345,40 @@ class HomeScreen extends StatelessWidget {
                           color: Color(0xff1f1f1f),
                           fontFamily: 'Medium',
                           fontSize: 16,
+                        ),
+                      ),
+                      SizedBox(
+                        height: 2,
+                      ),
+                      RichText(
+                        text: TextSpan(
+                          children: [
+                            TextSpan(
+                              text: '859,00£',
+                              style: TextStyle(
+                                color: Color(0xff1f1f1f),
+                                fontFamily: 'Bold',
+                                fontSize: 15,
+                              ),
+                            ),
+                            TextSpan(
+                              text: ' Original price:',
+                              style: TextStyle(
+                                color: Color(0xff7a7a7a),
+                                fontFamily: 'Bold',
+                                fontSize: 14,
+                              ),
+                            ),
+                            TextSpan(
+                              text: ' 1059,00£',
+                              style: TextStyle(
+                                color: Color(0xff7a7a7a),
+                                fontFamily: 'Bold',
+                                fontSize: 14,
+                                decoration: TextDecoration.lineThrough,
+                              ),
+                            ),
+                          ],
                         ),
                       )
                     ],
