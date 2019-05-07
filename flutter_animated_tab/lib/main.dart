@@ -9,7 +9,14 @@ void main() {
   ));
 }
 
-class Home extends StatelessWidget {
+class Home extends StatefulWidget {
+  @override
+  HomeState createState() {
+    return new HomeState();
+  }
+}
+
+class HomeState extends State<Home> {
   final List<TabModel> tabModelList = [
     TabModel(
       title: 'Home',
@@ -17,7 +24,6 @@ class Home extends StatelessWidget {
       icon: Icon(
         Icons.home,
         color: Colors.white,
-
       ),
     ),
     TabModel(
@@ -42,6 +48,7 @@ class Home extends StatelessWidget {
       ),
     ),
   ];
+  String initialWidget = "Home";
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -51,9 +58,27 @@ class Home extends StatelessWidget {
           Expanded(
             child: Container(
               color: Colors.white,
+              child: Center(
+                child: Text(
+                  initialWidget,
+                  style: TextStyle(
+                    color: Colors.black54,
+                    fontFamily: 'Bold',
+                    fontSize: 18,
+                  ),
+                ),
+              ),
             ),
           ),
-          AnimatedTab(tabModelList: tabModelList,)
+          AnimatedTab(
+            tabModelList: tabModelList,
+            getCallback: (index) {
+              
+              setState(() {
+                initialWidget = tabModelList[index].title;
+              });
+            },
+          )
         ],
       ),
     );
