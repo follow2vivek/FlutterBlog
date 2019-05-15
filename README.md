@@ -13,3 +13,6 @@
 
 4. [Payment UI Design](https://github.com/follow2vivek/FlutterBlog/tree/master/smart_pay_ui) & [Tutorial](#)
 <img src="./smart_pay_ui/screenshot/ss_1.png" alt="flutter payment ui"  width="200" height="400" />
+
+5. [Flutter website exmaple](https://github.com/follow2vivek/FlutterBlog/tree/master/flutter_web_cooking_ui) & [Tutorial](#)
+<img src="./flutter_web_cooking_ui/screenshot/flutter_web_example.png" alt="flutter payment ui"  width="100%" height="400" />
