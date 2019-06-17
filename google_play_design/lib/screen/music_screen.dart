@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_play_design/res/color.dart';
 import 'package:google_play_design/res/style.dart';
 import 'package:google_play_design/widget/recent_widget.dart';
+import 'package:google_play_design/widget/songs_widget.dart';
 
 class MusicScreen extends StatefulWidget {
   @override
@@ -167,7 +168,11 @@ class _MusicScreenState extends State<MusicScreen>
                                 ),
                               )
                             ],
-                          )
+                          ),
+                          SizedBox(
+                            height: 16,
+                          ),
+                          SongsWidget()
                         ],
                       ),
                     ),
