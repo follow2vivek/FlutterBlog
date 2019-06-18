@@ -17,5 +17,5 @@
 5. [Flutter website exmaple](https://github.com/follow2vivek/FlutterBlog/tree/master/flutter_web_cooking_ui) & [Tutorial](https://diveintoflutter.blogspot.com/2019/05/flutter-website-example.html)
 <img src="./flutter_web_cooking_ui/screenshot/flutter_web_example.png" alt="flutter payment ui"  width="100%" height="400" />
 
-5. [Google Play UI in Flutter](https://github.com/follow2vivek/FlutterBlog/tree/master/google_play_design) & [Tutorial](#)
+5. [Google Play UI in Flutter](https://github.com/follow2vivek/FlutterBlog/tree/master/google_play_design) & [Tutorial](https://diveintoflutter.blogspot.com/2019/06/google-play-ui-design-in-flutter.html)
 <img src="./google_play_design/screenshot/ss_2.png" alt="flutter google play ui"  width="200" height="400" />
