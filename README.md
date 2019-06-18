@@ -18,4 +18,4 @@
 <img src="./flutter_web_cooking_ui/screenshot/flutter_web_example.png" alt="flutter payment ui"  width="100%" height="400" />
 
 5. [Google Play UI in Flutter](https://github.com/follow2vivek/FlutterBlog/tree/master/google_play_design) & [Tutorial](#)
-<img src="./google_play_design/screenshot/ss_2.png" alt="flutter google play ui"  width="100%" height="400" />
+<img src="./google_play_design/screenshot/ss_2.png" alt="flutter google play ui"  width="200" height="400" />
